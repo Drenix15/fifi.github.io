@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Letras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="timer">Tiempo restante: <span id="time">40</span>s</div>
+    <button id="start-button">Iniciar Juego</button>
+    <button id="pause-button" disabled>Pausa</button>
+    <button id="reset-button" disabled>Reiniciar Letras</button>
+    <div id="letters-container">
+        <!-- Aquí se generarán las letras -->
+    </div>
+
+    <!-- Pop-up de "Perdiste" -->
+    <div id="popup" class="popup-hidden">
+        <div class="popup-content">
+            <h2>¡Perdiste!</h2>
+            <p>El tiempo se ha agotado.</p>
+            <button onclick="closePopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
